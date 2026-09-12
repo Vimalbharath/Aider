@@ -1,0 +1,175 @@
+\documentclass[letterpaper,11pt]{article}
+\setlength{\footskip}{4.08003pt}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+% Font options: 
+\usepackage{tgtermes}            % Professional Serif (Times style)
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%-----------HEADER-----------
+\begin{center}
+    \textbf{\Huge \scshape VIMALBHARATH KUMAR} \\ \vspace{2pt}
+    \small \textbf{Software Development Engineer | Java, Spring Boot \& React} \\ \vspace{2pt}
+    \small +91 80727 32691 $|$ \href{mailto:vimalbharath21@gmail.com}{\underline{vimalbharath21@gmail.com}} \\ \vspace{1pt}
+    \href{https://vimalbharath.netlify.app/}{\underline{Portfolio}} $|$
+    \href{https://www.linkedin.com/in/vimalbharath-kumar-007311201}{\underline{LinkedIn}} $|$
+    \href{https://github.com/Vimalbharath}{\underline{GitHub}} $|$
+    \href{https://leetcode.com/Vi21rath}{\underline{LeetCode}}
+\end{center}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java (Core Java, OOPs, Collections, Multithreading), JavaScript (ES6+), SQL, Python} \\
+     \textbf{Backend Development}{: Spring Boot, RESTful APIs, Microservices Architecture, Spring Data JPA, Hibernate, JWT Auth} \\
+     \textbf{Frontend Development}{: React.js, Redux Toolkit, Axios, HTML5, CSS3, Bootstrap} \\
+     \textbf{Cloud \& DevOps}{: Docker, Red Hat OpenShift (ROSA), Kubernetes, GitLab CI/CD, WebSphere (WAS), Splunk} \\
+     \textbf{Databases \& Tools}{: MySQL, PostgreSQL, Git, GitHub Copilot, Postman, JUnit, Mockito}
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {HTC Global Services}{Chennai, Tamil Nadu}
+      {Software Development Engineer (SDE) - Full Stack}{Feb 2022 -- Present}
+      \resumeItemListStart
+        \resumeItem{Accelerated legacy monolith modernization by engineering \textbf{Spring Boot microservices} to replace legacy WebSphere (WAS) workflows, deploying containerized services on \textbf{Red Hat OpenShift (ROSA)} to enhance system scalability.}
+        \resumeItem{Architected automated \textbf{GitLab CI/CD pipelines} for continuous build verification and deployment across 7 non-production environments, reducing manual environment deployment overhead by \textbf{70\%}.}
+        \resumeItem{Engineered automated end-to-end integration and API validation suites across staging microservices, decreasing pre-production incident reports by \textbf{90\%}.}
+        \resumeItem{Managed \textbf{MySQL/PostgreSQL} schema migrations and optimized complex \textbf{SQL queries} using indexed joins and execution plan analysis, maintaining 100\% data consistency during system upgrades.}
+        \resumeItem{Utilized \textbf{Splunk log aggregation} to diagnose microservice bottlenecks, conduct Root Cause Analysis (RCA) on distributed API calls, and maintain high system availability.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Full-Stack Expense Tracker Platform} $|$ \emph{Spring Boot, React, MySQL, GitHub Copilot, REST API} $|$ \href{https://tracker-frontend-8mvf.onrender.com/}{\underline{View Live}
+          $|$ \href{https://github.com/Vimalbharath/project3}{\underline{Github code}}}}{}
+          \resumeItemListStart
+            \resumeItem{Architected a full-stack financial tracking application leveraging \textbf{GitHub Copilot} to accelerate backend service layer development and frontend component scaffolding.}
+            \resumeItem{Engineered a robust \textbf{Spring Boot} backend with \textbf{Spring Data JPA} and \textbf{MySQL} to persist transactional data, categorization models, and monthly budget limits.}
+            \resumeItem{Built an interactive dashboard in \textbf{React.js} featuring a dynamic monthly calendar view to visualize daily expenditure trends, category breakdowns, and financial analytics.}
+            \resumeItem{Optimized RESTful API endpoint execution times and handled client-side asynchronous data flows using \textbf{Axios} and deployed on \textbf{Render} platform.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Full-Stack Tournament Scoring Application} $|$ \emph{Spring Boot, React, MySQL, JWT, Redux}}{}
+          \resumeItemListStart
+            \resumeItem{Engineered a scalable RESTful backend using \textbf{Spring Boot} and \textbf{Spring Data JPA} following 3-tier Layered Architecture (Controller-Service-Repository).}
+            \resumeItem{Secured backend endpoints with Spring Security and stateless \textbf{JWT} authentication, implementing Role-Based Access Control (RBAC) to manage user permissions.}
+            \resumeItem{Developed an interactive dashboard in \textbf{React} utilizing \textbf{Redux Toolkit} for global state management and \textbf{Axios} interceptors for real-time score rendering.}
+            \resumeItem{Designed optimized \textbf{MySQL} database schemas with indexed primary/foreign keys to accelerate leaderboard query execution.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Performance Rating Platform} $|$ \emph{React, Bootstrap, Axios, REST API}}{}
+          \resumeItemListStart
+            \resumeItem{Built a responsive corporate appraisal portal in \textbf{React.js} enabling managers to evaluate employee performance metrics seamlessly.}
+            \resumeItem{Configured client-side routing via \textbf{React-Router} and managed persistent user session states using Local Storage.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Personal Portfolio Website} $|$ \emph{React, JavaScript, GitLab CI/CD} $|$ \href{https://vimalbharath.netlify.app/}{\underline{View Live}}
+           $|$ \href{https://gitlab.com/vimalbharath21/portfolio}{\underline{Gitlab code}}}{}
+          \resumeItemListStart
+            \resumeItem{Designed and deployed a responsive Single Page Application (SPA) showcasing full-stack projects and technical architecture.}
+            \resumeItem{Automated continuous deployment (CD) workflows using \textbf{GitLab CI/CD} pipelines for live hosting on \textbf{Netlify}.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Anna University (BIT Campus)}{Tiruchirappalli, Tamil Nadu}
+      {Bachelor of Engineering in Electronics and Communication}{Jul 2016 -- Nov 2020}
+  \resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS AND AWARDS-----------
+\section{Achievements \& Awards}
+  \resumeItemListStart
+    \resumeItem{\textbf{Shooting Star \& Client Delight Awards:} Recognized by HTC Global Services for rapid technology onboarding and outstanding technical delivery.}
+    \resumeItem{\textbf{Academic Excellence:} Secured School First position in secondary school board examinations (1133/1200).}
+  \resumeItemListEnd
+
+\end{document}

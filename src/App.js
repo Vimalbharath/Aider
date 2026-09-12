@@ -27,7 +27,7 @@ export default function App() {
   const portfolioData = {
     name: "VIMALBHARATH KUMAR",
     title: "Software Development Engineer | Java, Spring Boot & React",
-    profileImage: "https://vimalbharath.netlify.app/static/media/Vimal.07b469a473fb46e15dcd.jpg",
+    profileImage: "/Vimal.jpeg",
     phone: "+91 80727 32691",
     email: "vimalbharath21@gmail.com",
     links: {
