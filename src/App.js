@@ -25,13 +25,13 @@ export default function App() {
   const [navOpen, setNavOpen] = useState(false);
 
   const portfolioData = {
-    name: "VIMALBHARATH KUMAR",
-    title: "Software Development Engineer | Java, Spring Boot & React",
-    profileImage: "/Vimal.jpeg",
-    phone: "+91 80727 32691",
-    email: "vimalbharath21@gmail.com",
+    name: "KALAIVANI KUMAR",
+    title: "GDS | BPM | Kallipattu",
+    profileImage: "/Kalai.jpeg",
+    phone: "+91 90800 84327",
+    email: "kalaivanikumar21@gmail.com",
     links: {
-      portfolio: "https://vimalbharath.netlify.app/",
+      portfolio: "https://www.instagram.com/msd07thalapathy22?stkn=b3o3ODB5ZW1vZzht",
       linkedin: "https://www.linkedin.com/in/vimalbharath-kumar-007311201",
       github: "https://github.com/Vimalbharath",
       leetcode: "https://leetcode.com/Vi21rath"
@@ -104,11 +104,11 @@ export default function App() {
       institution: "Anna University (BIT Campus)",
       location: "Tiruchirappalli, Tamil Nadu",
       degree: "Bachelor of Engineering in Electronics and Communication",
-      period: "Jul 2016 -- Nov 2020"
+      period: "Jul 2019 -- May 2023"
     },
     achievements: [
-      "Shooting Star & Client Delight Awards: Recognized by HTC Global Services for rapid technology onboarding and outstanding technical delivery.",
-      "Academic Excellence: Secured School First position in secondary school board examinations (1133/1200)."
+      "Sports Excellence: Secured 1st place in Department Level Khokho Tournament (2019-20) and 2nd place in Department Level Khokho Tournament (2021-22).",
+      "Academic Excellence: Secured School Second position in SSLC (495/500)."
     ]
   };
 
@@ -116,7 +116,7 @@ export default function App() {
     <div className="app-container">
       {/* Navigation */}
       <nav className="navbar">
-        <div className="nav-logo">Vimalbharath.dev</div>
+        <div className="nav-logo">Kalaivani.Kumar</div>
         <button 
           className="menu-toggle" 
           onClick={() => setNavOpen(!navOpen)}
@@ -175,17 +175,9 @@ export default function App() {
         </div>
 
         <div className="links-row">
-          <a href={portfolioData.links.linkedin} target="_blank" rel="noreferrer" className="glare-btn">
-            LinkedIn <ExternalLinkIcon />
-          </a>
-          <a href={portfolioData.links.github} target="_blank" rel="noreferrer" className="glare-btn">
-            GitHub <ExternalLinkIcon />
-          </a>
-          <a href={portfolioData.links.leetcode} target="_blank" rel="noreferrer" className="glare-btn">
-            LeetCode <ExternalLinkIcon />
-          </a>
+    
           <a href={portfolioData.links.portfolio} target="_blank" rel="noreferrer" className="glare-btn">
-            Live Portfolio <ExternalLinkIcon />
+            Instagram <ExternalLinkIcon />
           </a>
         </div>
       </header>
@@ -292,7 +284,7 @@ export default function App() {
 
       {/* Footer */}
       <footer className="footer">
-        <p>© {new Date().getFullYear()} Vimalbharath Kumar. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Kalaivani Kumar. All rights reserved.</p>
       </footer>
     </div>
   );
