@@ -23,6 +23,7 @@ export default function App() {
   const portfolioData = {
     name: "VIMALBHARATH KUMAR",
     title: "Software Development Engineer | Java, Spring Boot & React",
+    profileImage: "https://github.com/Vimalbharath.png", // GitHub Avatar image feed
     phone: "+91 80727 32691",
     email: "vimalbharath21@gmail.com",
     links: {
@@ -144,7 +145,7 @@ export default function App() {
       fontSize: '0.95rem'
     },
     heroSection: {
-      padding: '60px 0 40px',
+      padding: '50px 0 40px',
       textAlign: 'center'
     },
     heroTitle: {
@@ -177,19 +178,6 @@ export default function App() {
       gap: '15px',
       flexWrap: 'wrap'
     },
-    btn: {
-      display: 'inline-flex',
-      alignItems: 'center',
-      gap: '6px',
-      padding: '8px 16px',
-      borderRadius: '6px',
-      fontSize: '0.9rem',
-      fontWeight: '600',
-      textDecoration: 'none',
-      backgroundColor: '#1e293b',
-      color: '#38bdf8',
-      border: '1px solid #334155'
-    },
     section: {
       padding: '40px 0',
       borderBottom: '1px solid #334155'
@@ -202,10 +190,10 @@ export default function App() {
       borderLeft: '4px solid #38bdf8',
       paddingLeft: '10px'
     },
-    card: {
+    cardContent: {
       backgroundColor: '#1e293b',
       padding: '20px',
-      borderRadius: '8px',
+      borderRadius: '12px',
       marginBottom: '20px',
       border: '1px solid #334155'
     },
@@ -279,6 +267,15 @@ export default function App() {
 
       {/* Hero Header */}
       <header style={styles.heroSection}>
+        {/* Profile Image with Pulsing Glare Ring */}
+        <div className="profile-img-container">
+          <img 
+            src={portfolioData.profileImage} 
+            alt={portfolioData.name} 
+            className="profile-img"
+          />
+        </div>
+
         <h1 style={styles.heroTitle}>{portfolioData.name}</h1>
         <p style={styles.heroSubtitle}>{portfolioData.title}</p>
         
@@ -290,16 +287,16 @@ export default function App() {
         </div>
 
         <div style={styles.linksRow}>
-          <a href={portfolioData.links.linkedin} target="_blank" rel="noreferrer" style={styles.btn}>
+          <a href={portfolioData.links.linkedin} target="_blank" rel="noreferrer" className="glare-btn">
             LinkedIn <ExternalLinkIcon />
           </a>
-          <a href={portfolioData.links.github} target="_blank" rel="noreferrer" style={styles.btn}>
+          <a href={portfolioData.links.github} target="_blank" rel="noreferrer" className="glare-btn">
             GitHub <ExternalLinkIcon />
           </a>
-          <a href={portfolioData.links.leetcode} target="_blank" rel="noreferrer" style={styles.btn}>
+          <a href={portfolioData.links.leetcode} target="_blank" rel="noreferrer" className="glare-btn">
             LeetCode <ExternalLinkIcon />
           </a>
-          <a href={portfolioData.links.portfolio} target="_blank" rel="noreferrer" style={styles.btn}>
+          <a href={portfolioData.links.portfolio} target="_blank" rel="noreferrer" className="glare-btn">
             Live Portfolio <ExternalLinkIcon />
           </a>
         </div>
@@ -308,7 +305,7 @@ export default function App() {
       {/* Technical Skills */}
       <section id="skills" style={styles.section}>
         <h2 style={styles.sectionTitle}>Technical Skills</h2>
-        <div style={styles.card}>
+        <div style={styles.cardContent}>
           {portfolioData.skills.map((skill, idx) => (
             <div key={idx} style={styles.skillCategory}>
               <span style={styles.skillName}>{skill.category}: </span>
@@ -322,7 +319,7 @@ export default function App() {
       <section id="experience" style={styles.section}>
         <h2 style={styles.sectionTitle}>Experience</h2>
         {portfolioData.experience.map((exp, idx) => (
-          <div key={idx} style={styles.card}>
+          <div key={idx} style={styles.cardContent}>
             <div style={styles.cardHeader}>
               <div>
                 <div style={styles.cardTitle}>{exp.company}</div>
@@ -342,34 +339,36 @@ export default function App() {
         ))}
       </section>
 
-      {/* Projects */}
+      {/* Projects with Glaring Running CSS */}
       <section id="projects" style={styles.section}>
-        <h2 style={styles.sectionTitle}>Projects</h2>
+        <h2 style={styles.sectionTitle}>Projects &amp; Works</h2>
         {portfolioData.projects.map((proj, idx) => (
-          <div key={idx} style={styles.card}>
-            <div style={styles.cardHeader}>
-              <div>
-                <div style={styles.cardTitle}>{proj.title}</div>
-                <div style={styles.cardSubtitle}>{proj.tech}</div>
+          <div key={idx} className="glowing-card" style={{ marginBottom: '25px' }}>
+            <div style={styles.cardContent}>
+              <div style={styles.cardHeader}>
+                <div>
+                  <div style={styles.cardTitle}>{proj.title}</div>
+                  <div style={styles.cardSubtitle}>{proj.tech}</div>
+                </div>
+                <div style={{ display: 'flex', gap: '10px', marginTop: '8px' }}>
+                  {proj.live && (
+                    <a href={proj.live} target="_blank" rel="noreferrer" className="glare-btn">
+                      View Live <ExternalLinkIcon />
+                    </a>
+                  )}
+                  {proj.github && (
+                    <a href={proj.github} target="_blank" rel="noreferrer" className="glare-btn">
+                      Code <ExternalLinkIcon />
+                    </a>
+                  )}
+                </div>
               </div>
-              <div style={{ display: 'flex', gap: '10px', marginTop: '5px' }}>
-                {proj.live && (
-                  <a href={proj.live} target="_blank" rel="noreferrer" style={styles.btn}>
-                    View Live <ExternalLinkIcon />
-                  </a>
-                )}
-                {proj.github && (
-                  <a href={proj.github} target="_blank" rel="noreferrer" style={styles.btn}>
-                    Code <ExternalLinkIcon />
-                  </a>
-                )}
-              </div>
+              <ul style={styles.list}>
+                {proj.details.map((item, dIndex) => (
+                  <li key={dIndex} style={styles.listItem}>{item}</li>
+                ))}
+              </ul>
             </div>
-            <ul style={styles.list}>
-              {proj.details.map((item, dIndex) => (
-                <li key={dIndex} style={styles.listItem}>{item}</li>
-              ))}
-            </ul>
           </div>
         ))}
       </section>
@@ -377,7 +376,7 @@ export default function App() {
       {/* Education */}
       <section id="education" style={styles.section}>
         <h2 style={styles.sectionTitle}>Education</h2>
-        <div style={styles.card}>
+        <div style={styles.cardContent}>
           <div style={styles.cardHeader}>
             <div>
               <div style={styles.cardTitle}>{portfolioData.education.institution}</div>
@@ -394,7 +393,7 @@ export default function App() {
       {/* Achievements & Awards */}
       <section id="achievements" style={styles.section}>
         <h2 style={styles.sectionTitle}>Achievements &amp; Awards</h2>
-        <div style={styles.card}>
+        <div style={styles.cardContent}>
           <ul style={styles.list}>
             {portfolioData.achievements.map((ach, idx) => (
               <li key={idx} style={styles.listItem}>{ach}</li>
