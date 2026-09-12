@@ -17,13 +17,17 @@ const MenuIcon = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
 );
 
+const CloseIcon = () => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+);
+
 export default function App() {
   const [navOpen, setNavOpen] = useState(false);
 
   const portfolioData = {
     name: "VIMALBHARATH KUMAR",
     title: "Software Development Engineer | Java, Spring Boot & React",
-    profileImage: "https://github.com/Vimalbharath.png",
+    profileImage: "https://vimalbharath.netlify.app/static/media/Vimal.07b469a473fb46e15dcd.jpg",
     phone: "+91 80727 32691",
     email: "vimalbharath21@gmail.com",
     links: {
@@ -120,14 +124,35 @@ export default function App() {
         >
           <MenuIcon />
         </button>
-        <ul className="nav-links" style={{ display: navOpen ? 'flex' : undefined }}>
-          <li><a href="#skills" className="nav-link" onClick={() => setNavOpen(false)}>Skills</a></li>
-          <li><a href="#experience" className="nav-link" onClick={() => setNavOpen(false)}>Experience</a></li>
-          <li><a href="#projects" className="nav-link" onClick={() => setNavOpen(false)}>Projects</a></li>
-          <li><a href="#education" className="nav-link" onClick={() => setNavOpen(false)}>Education</a></li>
-          <li><a href="#achievements" className="nav-link" onClick={() => setNavOpen(false)}>Achievements</a></li>
+        <ul className="nav-links">
+          <li><a href="#skills" className="nav-link">Skills</a></li>
+          <li><a href="#experience" className="nav-link">Experience</a></li>
+          <li><a href="#projects" className="nav-link">Projects</a></li>
+          <li><a href="#education" className="nav-link">Education</a></li>
+          <li><a href="#achievements" className="nav-link">Achievements</a></li>
         </ul>
       </nav>
+
+      {/* Modal Navigation Menu for Mobile */}
+      {navOpen && (
+        <div className="nav-modal-overlay" onClick={() => setNavOpen(false)}>
+          <div className="nav-modal-content" onClick={(e) => e.stopPropagation()}>
+            <div className="nav-modal-header">
+              <span className="nav-logo">Navigation</span>
+              <button className="menu-close-btn" onClick={() => setNavOpen(false)}>
+                <CloseIcon />
+              </button>
+            </div>
+            <ul className="nav-modal-links">
+              <li><a href="#skills" className="nav-modal-link" onClick={() => setNavOpen(false)}>Skills</a></li>
+              <li><a href="#experience" className="nav-modal-link" onClick={() => setNavOpen(false)}>Experience</a></li>
+              <li><a href="#projects" className="nav-modal-link" onClick={() => setNavOpen(false)}>Projects</a></li>
+              <li><a href="#education" className="nav-modal-link" onClick={() => setNavOpen(false)}>Education</a></li>
+              <li><a href="#achievements" className="nav-modal-link" onClick={() => setNavOpen(false)}>Achievements</a></li>
+            </ul>
+          </div>
+        </div>
+      )}
 
       {/* Hero Header */}
       <header className="hero-section">

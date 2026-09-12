@@ -63,6 +63,80 @@ body {
   color: #38bdf8;
 }
 
+/* Modal Navigation Overlay */
+.nav-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.2s ease-out forwards;
+}
+
+.nav-modal-content {
+  background: #1e293b;
+  border: 1px solid #38bdf8;
+  border-radius: 16px;
+  width: 85%;
+  max-width: 380px;
+  padding: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(56, 189, 248, 0.3);
+}
+
+.nav-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #334155;
+  padding-bottom: 12px;
+}
+
+.menu-close-btn {
+  background: none;
+  border: none;
+  color: #f8fafc;
+  cursor: pointer;
+}
+
+.nav-modal-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.nav-modal-link {
+  color: #f8fafc;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  display: block;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.nav-modal-link:hover {
+  background: #334155;
+  color: #38bdf8;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* Hero Section */
 .hero-section {
   padding: 50px 0 40px;
@@ -279,14 +353,18 @@ body {
   margin-top: 8px;
 }
 
-/* Profile Image Outer Glowing Ring */
+/* Profile Image Outer Glowing Ring - Takes at least half screen height or width responsive */
 .profile-img-container {
   position: relative;
-  width: 140px;
-  height: 140px;
-  margin: 0 auto 20px;
+  width: 45vh;
+  height: 45vh;
+  max-width: 320px;
+  max-height: 320px;
+  min-width: 220px;
+  min-height: 220px;
+  margin: 0 auto 25px;
   border-radius: 50%;
-  padding: 4px;
+  padding: 6px;
   background: linear-gradient(45deg, #38bdf8, #8b5cf6, #ec4899);
   background-size: 300% 300%;
   animation: glowingBorder 4s ease infinite, pulseGlow 3s ease-in-out infinite;
@@ -299,4 +377,37 @@ body {
   border-radius: 50%;
   background-color: #0f172a;
   display: block;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .card-header {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .card-meta-right {
+    text-align: left;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .profile-img-container {
+    width: 40vh;
+    height: 40vh;
+  }
 }
