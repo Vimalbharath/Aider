@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-// Inline simple SVG icons to eliminate extra external dependencies
+// Inline simple SVG icons
 const MailIcon = () => (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
 );
@@ -23,7 +23,7 @@ export default function App() {
   const portfolioData = {
     name: "VIMALBHARATH KUMAR",
     title: "Software Development Engineer | Java, Spring Boot & React",
-    profileImage: "https://github.com/Vimalbharath.png", // GitHub Avatar image feed
+    profileImage: "https://github.com/Vimalbharath.png",
     phone: "+91 80727 32691",
     email: "vimalbharath21@gmail.com",
     links: {
@@ -108,166 +108,29 @@ export default function App() {
     ]
   };
 
-  const styles = {
-    container: {
-      maxWidth: '1024px',
-      margin: '0 auto',
-      padding: '0 20px'
-    },
-    nav: {
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      padding: '20px 0',
-      borderBottom: '1px solid #334155',
-      position: 'relative'
-    },
-    logo: {
-      fontSize: '1.25rem',
-      fontWeight: 'bold',
-      color: '#38bdf8'
-    },
-    menuToggle: {
-      display: 'none',
-      background: 'none',
-      border: 'none',
-      color: '#f8fafc',
-      cursor: 'pointer'
-    },
-    navLinks: {
-      display: 'flex',
-      gap: '20px',
-      listStyle: 'none'
-    },
-    navLink: {
-      color: '#94a3b8',
-      textDecoration: 'none',
-      fontSize: '0.95rem'
-    },
-    heroSection: {
-      padding: '50px 0 40px',
-      textAlign: 'center'
-    },
-    heroTitle: {
-      fontSize: '2.5rem',
-      fontWeight: '800',
-      marginBottom: '10px',
-      color: '#f8fafc'
-    },
-    heroSubtitle: {
-      fontSize: '1.2rem',
-      color: '#38bdf8',
-      marginBottom: '20px'
-    },
-    heroContact: {
-      display: 'flex',
-      justifyContent: 'center',
-      gap: '20px',
-      flexWrap: 'wrap',
-      marginBottom: '25px',
-      color: '#94a3b8'
-    },
-    contactItem: {
-      display: 'flex',
-      alignItems: 'center',
-      gap: '6px'
-    },
-    linksRow: {
-      display: 'flex',
-      justifyContent: 'center',
-      gap: '15px',
-      flexWrap: 'wrap'
-    },
-    section: {
-      padding: '40px 0',
-      borderBottom: '1px solid #334155'
-    },
-    sectionTitle: {
-      fontSize: '1.5rem',
-      fontWeight: '700',
-      color: '#f8fafc',
-      marginBottom: '20px',
-      borderLeft: '4px solid #38bdf8',
-      paddingLeft: '10px'
-    },
-    cardContent: {
-      backgroundColor: '#1e293b',
-      padding: '20px',
-      borderRadius: '12px',
-      marginBottom: '20px',
-      border: '1px solid #334155'
-    },
-    cardHeader: {
-      display: 'flex',
-      justifyContent: 'space-between',
-      flexWrap: 'wrap',
-      marginBottom: '10px'
-    },
-    cardTitle: {
-      fontSize: '1.15rem',
-      fontWeight: '600',
-      color: '#f8fafc'
-    },
-    cardSubtitle: {
-      color: '#38bdf8',
-      fontSize: '0.95rem'
-    },
-    cardMeta: {
-      color: '#94a3b8',
-      fontSize: '0.9rem'
-    },
-    list: {
-      paddingLeft: '20px',
-      color: '#cbd5e1',
-      fontSize: '0.95rem',
-      lineHeight: '1.6'
-    },
-    listItem: {
-      marginBottom: '8px'
-    },
-    skillCategory: {
-      marginBottom: '12px',
-      lineHeight: '1.5'
-    },
-    skillName: {
-      color: '#38bdf8',
-      fontWeight: '600'
-    },
-    footer: {
-      textAlign: 'center',
-      padding: '30px 0',
-      color: '#64748b',
-      fontSize: '0.85rem'
-    }
-  };
-
   return (
-    <div style={styles.container}>
+    <div className="app-container">
       {/* Navigation */}
-      <nav style={styles.nav}>
-        <div style={styles.logo}>Vimalbharath.dev</div>
+      <nav className="navbar">
+        <div className="nav-logo">Vimalbharath.dev</div>
         <button 
-          style={styles.menuToggle} 
+          className="menu-toggle" 
           onClick={() => setNavOpen(!navOpen)}
           aria-label="Toggle navigation menu"
         >
           <MenuIcon />
         </button>
-        <ul style={{
-          ...styles.navLinks,
-          display: navOpen ? 'flex' : undefined
-        }}>
-          <li><a href="#skills" style={styles.navLink} onClick={() => setNavOpen(false)}>Skills</a></li>
-          <li><a href="#experience" style={styles.navLink} onClick={() => setNavOpen(false)}>Experience</a></li>
-          <li><a href="#projects" style={styles.navLink} onClick={() => setNavOpen(false)}>Projects</a></li>
-          <li><a href="#education" style={styles.navLink} onClick={() => setNavOpen(false)}>Education</a></li>
-          <li><a href="#achievements" style={styles.navLink} onClick={() => setNavOpen(false)}>Achievements</a></li>
+        <ul className="nav-links" style={{ display: navOpen ? 'flex' : undefined }}>
+          <li><a href="#skills" className="nav-link" onClick={() => setNavOpen(false)}>Skills</a></li>
+          <li><a href="#experience" className="nav-link" onClick={() => setNavOpen(false)}>Experience</a></li>
+          <li><a href="#projects" className="nav-link" onClick={() => setNavOpen(false)}>Projects</a></li>
+          <li><a href="#education" className="nav-link" onClick={() => setNavOpen(false)}>Education</a></li>
+          <li><a href="#achievements" className="nav-link" onClick={() => setNavOpen(false)}>Achievements</a></li>
         </ul>
       </nav>
 
       {/* Hero Header */}
-      <header style={styles.heroSection}>
-        {/* Profile Image with Pulsing Glare Ring */}
+      <header className="hero-section">
         <div className="profile-img-container">
           <img 
             src={portfolioData.profileImage} 
@@ -276,17 +139,17 @@ export default function App() {
           />
         </div>
 
-        <h1 style={styles.heroTitle}>{portfolioData.name}</h1>
-        <p style={styles.heroSubtitle}>{portfolioData.title}</p>
+        <h1 className="hero-title">{portfolioData.name}</h1>
+        <p className="hero-subtitle">{portfolioData.title}</p>
         
-        <div style={styles.heroContact}>
-          <div style={styles.contactItem}><PhoneIcon /> {portfolioData.phone}</div>
-          <div style={styles.contactItem}>
-            <MailIcon /> <a href={`mailto:${portfolioData.email}`} style={{ color: 'inherit' }}>{portfolioData.email}</a>
+        <div className="hero-contact">
+          <div className="contact-item"><PhoneIcon /> {portfolioData.phone}</div>
+          <div className="contact-item">
+            <MailIcon /> <a href={`mailto:${portfolioData.email}`}>{portfolioData.email}</a>
           </div>
         </div>
 
-        <div style={styles.linksRow}>
+        <div className="links-row">
           <a href={portfolioData.links.linkedin} target="_blank" rel="noreferrer" className="glare-btn">
             LinkedIn <ExternalLinkIcon />
           </a>
@@ -303,36 +166,36 @@ export default function App() {
       </header>
 
       {/* Technical Skills */}
-      <section id="skills" style={styles.section}>
-        <h2 style={styles.sectionTitle}>Technical Skills</h2>
-        <div style={styles.cardContent}>
+      <section id="skills" className="section">
+        <h2 className="section-title">Technical Skills</h2>
+        <div className="card-content">
           {portfolioData.skills.map((skill, idx) => (
-            <div key={idx} style={styles.skillCategory}>
-              <span style={styles.skillName}>{skill.category}: </span>
-              <span style={{ color: '#cbd5e1' }}>{skill.items}</span>
+            <div key={idx} className="skill-category">
+              <span className="skill-name">{skill.category}: </span>
+              <span>{skill.items}</span>
             </div>
           ))}
         </div>
       </section>
 
       {/* Experience */}
-      <section id="experience" style={styles.section}>
-        <h2 style={styles.sectionTitle}>Experience</h2>
+      <section id="experience" className="section">
+        <h2 className="section-title">Experience</h2>
         {portfolioData.experience.map((exp, idx) => (
-          <div key={idx} style={styles.cardContent}>
-            <div style={styles.cardHeader}>
+          <div key={idx} className="card-content">
+            <div className="card-header">
               <div>
-                <div style={styles.cardTitle}>{exp.company}</div>
-                <div style={styles.cardSubtitle}>{exp.role}</div>
+                <div className="card-title">{exp.company}</div>
+                <div className="card-subtitle">{exp.role}</div>
               </div>
-              <div style={{ textAlign: 'right' }}>
-                <div style={styles.cardMeta}>{exp.location}</div>
-                <div style={styles.cardMeta}>{exp.period}</div>
+              <div className="card-meta-right">
+                <div className="card-meta">{exp.location}</div>
+                <div className="card-meta">{exp.period}</div>
               </div>
             </div>
-            <ul style={styles.list}>
+            <ul className="card-list">
               {exp.highlights.map((item, iIndex) => (
-                <li key={iIndex} style={styles.listItem}>{item}</li>
+                <li key={iIndex} className="card-list-item">{item}</li>
               ))}
             </ul>
           </div>
@@ -340,17 +203,17 @@ export default function App() {
       </section>
 
       {/* Projects with Glaring Running CSS */}
-      <section id="projects" style={styles.section}>
-        <h2 style={styles.sectionTitle}>Projects &amp; Works</h2>
+      <section id="projects" className="section">
+        <h2 className="section-title">Projects &amp; Works</h2>
         {portfolioData.projects.map((proj, idx) => (
-          <div key={idx} className="glowing-card" style={{ marginBottom: '25px' }}>
-            <div style={styles.cardContent}>
-              <div style={styles.cardHeader}>
+          <div key={idx} className="glowing-card">
+            <div className="card-content" style={{ marginBottom: 0 }}>
+              <div className="card-header">
                 <div>
-                  <div style={styles.cardTitle}>{proj.title}</div>
-                  <div style={styles.cardSubtitle}>{proj.tech}</div>
+                  <div className="card-title">{proj.title}</div>
+                  <div className="card-subtitle">{proj.tech}</div>
                 </div>
-                <div style={{ display: 'flex', gap: '10px', marginTop: '8px' }}>
+                <div className="action-buttons">
                   {proj.live && (
                     <a href={proj.live} target="_blank" rel="noreferrer" className="glare-btn">
                       View Live <ExternalLinkIcon />
@@ -363,9 +226,9 @@ export default function App() {
                   )}
                 </div>
               </div>
-              <ul style={styles.list}>
+              <ul className="card-list">
                 {proj.details.map((item, dIndex) => (
-                  <li key={dIndex} style={styles.listItem}>{item}</li>
+                  <li key={dIndex} className="card-list-item">{item}</li>
                 ))}
               </ul>
             </div>
@@ -374,36 +237,36 @@ export default function App() {
       </section>
 
       {/* Education */}
-      <section id="education" style={styles.section}>
-        <h2 style={styles.sectionTitle}>Education</h2>
-        <div style={styles.cardContent}>
-          <div style={styles.cardHeader}>
+      <section id="education" className="section">
+        <h2 className="section-title">Education</h2>
+        <div className="card-content">
+          <div className="card-header">
             <div>
-              <div style={styles.cardTitle}>{portfolioData.education.institution}</div>
-              <div style={styles.cardSubtitle}>{portfolioData.education.degree}</div>
+              <div className="card-title">{portfolioData.education.institution}</div>
+              <div className="card-subtitle">{portfolioData.education.degree}</div>
             </div>
-            <div style={{ textAlign: 'right' }}>
-              <div style={styles.cardMeta}>{portfolioData.education.location}</div>
-              <div style={styles.cardMeta}>{portfolioData.education.period}</div>
+            <div className="card-meta-right">
+              <div className="card-meta">{portfolioData.education.location}</div>
+              <div className="card-meta">{portfolioData.education.period}</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Achievements & Awards */}
-      <section id="achievements" style={styles.section}>
-        <h2 style={styles.sectionTitle}>Achievements &amp; Awards</h2>
-        <div style={styles.cardContent}>
-          <ul style={styles.list}>
+      <section id="achievements" className="section">
+        <h2 className="section-title">Achievements &amp; Awards</h2>
+        <div className="card-content">
+          <ul className="card-list">
             {portfolioData.achievements.map((ach, idx) => (
-              <li key={idx} style={styles.listItem}>{ach}</li>
+              <li key={idx} className="card-list-item">{ach}</li>
             ))}
           </ul>
         </div>
       </section>
 
       {/* Footer */}
-      <footer style={styles.footer}>
+      <footer className="footer">
         <p>© {new Date().getFullYear()} Vimalbharath Kumar. All rights reserved.</p>
       </footer>
     </div>
