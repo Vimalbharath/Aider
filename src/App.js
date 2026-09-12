@@ -118,12 +118,20 @@ export default function App() {
       justifyContent: 'space-between',
       alignItems: 'center',
       padding: '20px 0',
-      borderBottom: '1px solid #334155'
+      borderBottom: '1px solid #334155',
+      position: 'relative'
     },
     logo: {
       fontSize: '1.25rem',
       fontWeight: 'bold',
       color: '#38bdf8'
+    },
+    menuToggle: {
+      display: 'none',
+      background: 'none',
+      border: 'none',
+      color: '#f8fafc',
+      cursor: 'pointer'
     },
     navLinks: {
       display: 'flex',
@@ -250,11 +258,22 @@ export default function App() {
       {/* Navigation */}
       <nav style={styles.nav}>
         <div style={styles.logo}>Vimalbharath.dev</div>
-        <ul style={styles.navLinks}>
-          <li><a href="#skills" style={styles.navLink}>Skills</a></li>
-          <li><a href="#experience" style={styles.navLink}>Experience</a></li>
-          <li><a href="#projects" style={styles.navLink}>Projects</a></li>
-          <li><a href="#education" style={styles.navLink}>Education</a></li>
+        <button 
+          style={styles.menuToggle} 
+          onClick={() => setNavOpen(!navOpen)}
+          aria-label="Toggle navigation menu"
+        >
+          <MenuIcon />
+        </button>
+        <ul style={{
+          ...styles.navLinks,
+          display: navOpen ? 'flex' : undefined
+        }}>
+          <li><a href="#skills" style={styles.navLink} onClick={() => setNavOpen(false)}>Skills</a></li>
+          <li><a href="#experience" style={styles.navLink} onClick={() => setNavOpen(false)}>Experience</a></li>
+          <li><a href="#projects" style={styles.navLink} onClick={() => setNavOpen(false)}>Projects</a></li>
+          <li><a href="#education" style={styles.navLink} onClick={() => setNavOpen(false)}>Education</a></li>
+          <li><a href="#achievements" style={styles.navLink} onClick={() => setNavOpen(false)}>Achievements</a></li>
         </ul>
       </nav>
 
@@ -374,7 +393,7 @@ export default function App() {
 
       {/* Achievements & Awards */}
       <section id="achievements" style={styles.section}>
-        <h2 style={styles.sectionTitle}>Achievements & Awards</h2>
+        <h2 style={styles.sectionTitle}>Achievements &amp; Awards</h2>
         <div style={styles.card}>
           <ul style={styles.list}>
             {portfolioData.achievements.map((ach, idx) => (
