@@ -36,70 +36,42 @@ export default function App() {
       github: "https://github.com/Vimalbharath",
       leetcode: "https://leetcode.com/Vi21rath"
     },
-    skills: [
-      { category: "Languages", items: "Java (Core Java, OOPs, Collections, Multithreading), JavaScript (ES6+), SQL, Python" },
-      { category: "Backend Development", items: "Spring Boot, RESTful APIs, Microservices Architecture, Spring Data JPA, Hibernate, JWT Auth" },
-      { category: "Frontend Development", items: "React.js, Redux Toolkit, Axios, HTML5, CSS3, Bootstrap" },
-      { category: "Cloud & DevOps", items: "Docker, Red Hat OpenShift (ROSA), Kubernetes, GitLab CI/CD, WebSphere (WAS), Splunk" },
-      { category: "Databases & Tools", items: "MySQL, PostgreSQL, Git, GitHub Copilot, Postman, JUnit, Mockito" }
-    ],
-    experience: [
-      {
-        company: "HTC Global Services",
-        location: "Chennai, Tamil Nadu",
-        role: "Software Development Engineer (SDE) - Full Stack",
-        period: "Feb 2022 -- Present",
-        highlights: [
-          "Accelerated legacy monolith modernization by engineering Spring Boot microservices to replace legacy WebSphere (WAS) workflows, deploying containerized services on Red Hat OpenShift (ROSA) to enhance system scalability.",
-          "Architected automated GitLab CI/CD pipelines for continuous build verification and deployment across 7 non-production environments, reducing manual environment deployment overhead by 70%.",
-          "Engineered automated end-to-end integration and API validation suites across staging microservices, decreasing pre-production incident reports by 90%.",
-          "Managed MySQL/PostgreSQL schema migrations and optimized complex SQL queries using indexed joins and execution plan analysis, maintaining 100% data consistency during system upgrades.",
-          "Utilized Splunk log aggregation to diagnose microservice bottlenecks, conduct Root Cause Analysis (RCA) on distributed API calls, and maintain high system availability."
-        ]
-      }
-    ],
-    projects: [
-      {
-        title: "Full-Stack Expense Tracker Platform",
-        tech: "Spring Boot, React, MySQL, GitHub Copilot, REST API",
-        live: "https://tracker-frontend-8mvf.onrender.com/",
-        github: "https://github.com/Vimalbharath/project3",
-        details: [
-          "Architected a full-stack financial tracking application leveraging GitHub Copilot to accelerate backend service layer development and frontend component scaffolding.",
-          "Engineered a robust Spring Boot backend with Spring Data JPA and MySQL to persist transactional data, categorization models, and monthly budget limits.",
-          "Built an interactive dashboard in React.js featuring a dynamic monthly calendar view to visualize daily expenditure trends, category breakdowns, and financial analytics.",
-          "Optimized RESTful API endpoint execution times and handled client-side asynchronous data flows using Axios and deployed on Render platform."
-        ]
-      },
-      {
-        title: "Full-Stack Tournament Scoring Application",
-        tech: "Spring Boot, React, MySQL, JWT, Redux",
-        details: [
-          "Engineered a scalable RESTful backend using Spring Boot and Spring Data JPA following 3-tier Layered Architecture (Controller-Service-Repository).",
-          "Secured backend endpoints with Spring Security and stateless JWT authentication, implementing Role-Based Access Control (RBAC) to manage user permissions.",
-          "Developed an interactive dashboard in React utilizing Redux Toolkit for global state management and Axios interceptors for real-time score rendering.",
-          "Designed optimized MySQL database schemas with indexed primary/foreign keys to accelerate leaderboard query execution."
-        ]
-      },
-      {
-        title: "Performance Rating Platform",
-        tech: "React, Bootstrap, Axios, REST API",
-        details: [
-          "Built a responsive corporate appraisal portal in React.js enabling managers to evaluate employee performance metrics seamlessly.",
-          "Configured client-side routing via React-Router and managed persistent user session states using Local Storage."
-        ]
-      },
-      {
-        title: "Personal Portfolio Website",
-        tech: "React, JavaScript, GitLab CI/CD",
-        live: "https://vimalbharath.netlify.app/",
-        github: "https://gitlab.com/vimalbharath21/portfolio",
-        details: [
-          "Designed and deployed a responsive Single Page Application (SPA) showcasing full-stack projects and technical architecture.",
-          "Automated continuous deployment (CD) workflows using GitLab CI/CD pipelines for live hosting on Netlify."
-        ]
-      }
-    ],
+   skills: [
+  { category: "Postal & Branch Operations", items: "Branch Post Office Management, Mail Conveyance & Delivery Coordination, Cash & Accounts Handling, Record Maintenance, Regulatory Compliance (Dept. of Posts)" },
+  { category: "Banking Services", items: "India Post Payments Bank (IPPB) Transactions, Post Office Savings Account (POSA) Operations, AEPS, DBT & Aadhaar-linked Disbursements, Small Savings Schemes (RD, PPF, SSY)" },
+  { category: "Digital Tools", items: "Handheld Device / Smartphone Transaction Processing, MS Office, Online Transaction Systems, Basic Data Entry" },
+  { category: "Customer & Community Engagement", items: "Rural Customer Service, Grievance Handling, Product Marketing & Business Procurement, Local Outreach Camps" },
+  { category: "Core Strengths", items: "Team Supervision, Financial Accountability, Local Language Communication, Multitasking in Single-Handed Office" }
+],
+experience: [
+  {
+    company: "Indian Postal Department (India Post)",
+    location: "Kallipattu, Tamil Nadu",
+    role: "GDS - BPM",
+    period: "May 2023 -- Present",
+    highlights: [
+      "Manage end-to-end daily operations of the Branch Post Office, including mail conveyance, delivery coordination, and counter services for the local community.",
+      "Process IPPB banking transactions -- deposits, withdrawals, and account opening -- along with Post Office Savings Bank operations in compliance with Department of Posts guidelines.",
+      "Maintain accurate financial records, daily cash accounts, and transaction logs, ensuring error-free reconciliation.",
+      "Drive marketing and business procurement for postal and IPPB products, contributing to branch revenue and service targets.",
+      "Coordinate with Assistant Branch Postmaster(s) to ensure smooth branch functioning, handling combined BPM/ABPM duties when required.",
+      "Serve as the primary point of contact for the village community on postal, banking, and government scheme (DBT/Aadhaar-linked) services."
+    ]
+  }
+],
+projects: [
+  {
+    title: "Digital Banking & Financial Inclusion Drive",
+    tech: "IPPB, AEPS, Aadhaar-linked DBT",
+    details: [
+      "Led local onboarding of new IPPB account holders, expanding formal banking access in the branch's service area.",
+      "Organized outreach camps to enroll villagers in small savings schemes and government welfare payment programs.",
+      "Facilitated adoption of Aadhaar-enabled payment systems (AEPS) for pension and DBT disbursements.",
+      "Maintained zero-discrepancy daily cash and transaction records throughout the initiative."
+    ]
+  }
+]
+    ,
     education: {
       institution: "Anna University (BIT Campus)",
       location: "Tiruchirappalli, Tamil Nadu",
