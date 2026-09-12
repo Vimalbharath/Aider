@@ -1,0 +1,54 @@
+===============================================================================
+                       AIDER CHEAT SHEET & GUIDE
+===============================================================================
+
+1. INSTALLATION & SETUP
+-----------------------
+Install Aider via pip:
+    $ pip install aider-chat
+
+Set your API key (depending on the provider you use):
+    $ export OPENAI_API_KEY=your_api_key_here
+    $ export ANTHROPIC_API_KEY=your_api_key_here
+
+2. STARTING AIDER
+-----------------
+Run Aider with specific files:
+    $ aider file1.py path/to/file2.js
+
+Start Aider using a specific model:
+    $ aider --model claude-3-5-sonnet-20241022 file1.py
+    $ aider --model gpt-4o file1.py
+
+3. USEFUL IN-CHAT COMMANDS (SLASH COMMANDS)
+-------------------------------------------
+/add <file>
+    Add file(s) to the chat session so Aider can read and edit them.
+
+/drop <file>
+    Remove file(s) from the chat session to save context/tokens.
+
+/ls
+    List all files currently added to the chat session.
+
+/undo
+    Undo the last commit made by Aider in git history.
+
+/diff
+    Display the diff of changes made in the current session.
+
+/git <command>
+    Run a raw git command (e.g., /git status, /git log).
+
+/help
+    Show help information about commands and usage.
+
+/exit (or /quit)
+    Exit the Aider chat session.
+
+4. TIPS FOR BEST RESULTS
+------------------------
+- Only add files to the chat session that are relevant to your current task.
+- Be clear and specific in your prompt instructions.
+- Let Aider commit changes automatically to git so you can easily revert if needed.
+===============================================================================
