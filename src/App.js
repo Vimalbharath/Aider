@@ -31,7 +31,8 @@ export default function App() {
     phone: "+91 80727 32691",
     email: "vimalbharath21@gmail.com",
     links: {
-      portfolio: "https://vimalbharath.netlify.app/",
+      portfolio: "https://aider-portfolio.onrender.com/",
+      oldPortfolio: "https://vimalbharath.netlify.app/",
       linkedin: "https://www.linkedin.com/in/vimalbharath-kumar-007311201",
       github: "https://github.com/Vimalbharath",
       leetcode: "https://leetcode.com/Vi21rath"
@@ -41,7 +42,8 @@ export default function App() {
       { category: "Backend Development", items: "Spring Boot, RESTful APIs, Microservices Architecture, Spring Data JPA, Hibernate, JWT Auth" },
       { category: "Frontend Development", items: "React.js, Redux Toolkit, Axios, HTML5, CSS3, Bootstrap" },
       { category: "Cloud & DevOps", items: "Docker, Red Hat OpenShift (ROSA), Kubernetes, GitLab CI/CD, WebSphere (WAS), Splunk" },
-      { category: "Databases & Tools", items: "MySQL, PostgreSQL, Git, GitHub Copilot, Postman, JUnit, Mockito" }
+      { category: "AI Tools & Workflows", items: "Aider AI, Gemini 3.6 Flash API, GitHub Copilot" },
+      { category: "Databases & Tools", items: "MySQL, PostgreSQL, Git, Postman, JUnit, Mockito" }
     ],
     experience: [
       {
@@ -59,6 +61,17 @@ export default function App() {
       }
     ],
     projects: [
+      {
+        title: "AI-Powered Personal Portfolio Website",
+        tech: "React, Aider AI, Gemini 3.6 Flash API (Free Tier), Render",
+        live: "https://aider-portfolio.onrender.com/",
+        github: "https://github.com/Vimalbharath/Aider",
+        details: [
+          "Architected and engineered a modern responsive portfolio using Aider AI coding assistant tool paired with Google Gemini 3.6 Flash API (Free Tier).",
+          "Leveraged command-line AI pair programming workflows for rapid component refactoring, UI styling, and automated code editing.",
+          "Deployed the application seamlessly on Render with continuous delivery integration from GitHub."
+        ]
+      },
       {
         title: "Full-Stack Expense Tracker Platform",
         tech: "Spring Boot, React, MySQL, GitHub Copilot, REST API",
@@ -92,8 +105,8 @@ export default function App() {
         ]
       },
       {
-        title: "Personal Portfolio Website",
-        tech: "React, JavaScript, GitLab CI/CD",
+        title: "Legacy Personal Portfolio Website",
+        tech: "React, JavaScript, GitLab CI/CD, Netlify",
         live: "https://vimalbharath.netlify.app/",
         github: "https://gitlab.com/vimalbharath21/portfolio",
         details: [
@@ -187,7 +200,10 @@ export default function App() {
             LeetCode <ExternalLinkIcon />
           </a>
           <a href={portfolioData.links.portfolio} target="_blank" rel="noreferrer" className="glare-btn">
-            Live Portfolio <ExternalLinkIcon />
+            Live Portfolio (AI) <ExternalLinkIcon />
+          </a>
+          <a href={portfolioData.links.oldPortfolio} target="_blank" rel="noreferrer" className="glare-btn">
+            Old Portfolio <ExternalLinkIcon />
           </a>
         </div>
       </header>
