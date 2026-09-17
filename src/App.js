@@ -84,6 +84,8 @@ export default function App() {
       {
         title: "Performance Rating Platform",
         tech: "React, Bootstrap, Axios, REST API",
+        live: "https://reactclass-tnjt.onrender.com",
+        github: "https://github.com/Vimalbharath/ReactClass/tree/rating/Testing/my-react-app/src/project",
         details: [
           "Built a responsive corporate appraisal portal in React.js enabling managers to evaluate employee performance metrics seamlessly.",
           "Configured client-side routing via React-Router and managed persistent user session states using Local Storage."
