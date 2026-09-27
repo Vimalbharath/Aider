@@ -79,7 +79,7 @@ projects: [
       period: "Jul 2019 -- May 2023"
     },
     achievements: [
-      "Sports Excellence: Secured 1st place in Department Level Khokho Tournament (2019-20) and 2nd place in Department Level Khokho Tournament (2021-22).",
+      "Sports Excellence: Excellence in 100M and 200M running.Secured position in Zonal level Athletics.Captain in 2K22-23 Kho-Kho team in college .Also Secured 1st place in Department Level Khokho Tournament (2019-20) and 2nd place in Department Level Khokho Tournament (2021-22).",
       "Academic Excellence: Secured School Second position in SSLC (495/500)."
     ]
   };
