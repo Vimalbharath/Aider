@@ -1,0 +1,17 @@
+### LinkedIn Outreach & Profile Template
+
+Here is a tailored template you can use for your LinkedIn profile summary or when reaching out to recruiters/engineering managers at product-based companies:
+
+#### LinkedIn About Section:
+> **Full-Stack & AI/ML Engineer | Java, Spring Boot, React & PyTorch**
+> 
+> I am a Software Development Engineer with 3+ years of experience building scalable microservices and modern web applications. Recently, I have been deep-diving into AI/ML engineering, following Andrej Karpathy's "Zero to Hero" curriculum to build autograd engines and train GPT-2 models from scratch on FineWeb-Edu datasets.
+> 
+> 💡 **What I bring to the table:**
+> - **Backend & Cloud:** Spring Boot, Microservices, Red Hat OpenShift (ROSA), Docker, MySQL/PostgreSQL.
+> - **Frontend:** React.js, Redux Toolkit, responsive UI design.
+> - **AI/ML:** PyTorch, LLM training (GPT-2), tokenization, and custom autograd engines.
+> - **Problem Solving:** Strong foundation in Data Structures, Algorithms (LeetCode), and System Design.
+> 
+> I am actively looking for SDE / Full-Stack / AI Engineering roles in product-based companies. Let's connect!
+

@@ -1,0 +1,11 @@
+#### Cold Outreach Message to Engineering Managers:
+> "Hi [Name], 
+> 
+> I saw your team at [Company] is building some incredible products. I'm a Full-Stack SDE with 3+ years of experience in Spring Boot & React, and I've recently been specializing in AI/ML (training GPT-2 models from scratch using PyTorch on FineWeb-Edu datasets). 
+> 
+> I have a strong foundation in System Design and DSA, and I'm looking to bring this combined full-stack and AI skillset to a product-focused team. Are you open to a quick chat or sharing any relevant openings on your team?
+> 
+> Best regards,
+> Vimalbharath Kumar"
+
+---

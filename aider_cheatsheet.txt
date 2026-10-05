@@ -2,6 +2,11 @@
                        AIDER CHEAT SHEET & GUIDE
 ===============================================================================
 
+$env:OPENAI_API_KEY="your-api-key-here"
+
+aider --model gemini/gemini-2.5-flash
+
+
 1. INSTALLATION & SETUP
 -----------------------
 Install Aider via pip:
