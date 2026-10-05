@@ -1,0 +1,21 @@
+🚀 Exciting Update: Deep-Diving into AI/ML Engineering & Training GPT-2 from Scratch! 🧠
+
+Over the past few months, alongside my work as a Full-Stack SDE, I have been deep-diving into the fundamentals of Deep Learning and Large Language Models. Following Andrej Karpathy's legendary "Zero to Hero" curriculum, I wanted to move past just using APIs and truly understand the underlying mathematics and architecture of modern AI.
+
+I'm thrilled to share that I have successfully built and trained a custom GPT-2 model from scratch! 
+
+Here is what I engineered and learned during this hands-on journey:
+
+1️⃣ Custom Autograd Engine: Built a scalar backpropagation engine from first principles in Python to establish a rock-solid mathematical intuition for gradient flows.
+2️⃣ GPT-2 Architecture: Implemented Multi-Head Self-Attention, Positional Encodings, and Layer Normalization from scratch using PyTorch.
+3️⃣ GPU-Accelerated Training: Configured custom PyTorch training loops on Google Colab using GPU acceleration to train on 5 shards of the FineWeb-Edu dataset.
+4️⃣ Inference & Tokenization: Engineered checkpoint state management (.pt files) and inference generation pipelines featuring Top-K sampling, dynamic context cropping, and tiktoken Byte-Pair Encoding (BPE).
+
+This journey has completely transformed how I view software engineering, bridging the gap between scalable backend systems (Spring Boot/Microservices) and state-of-the-art AI models.
+
+Check out the implementation and code here:
+👉 GitHub Repository: https://github.com/Vimalbharath/ML
+
+I am actively looking for SDE / Full-Stack / AI Engineering roles in product-focused teams where I can bring this combined skillset to build next-generation applications. Let's connect!
+
+#AI #MachineLearning #DeepLearning #PyTorch #GPT2 #LLM #SoftwareEngineering #Java #SpringBoot #React #SystemDesign
