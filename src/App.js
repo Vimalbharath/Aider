@@ -50,7 +50,7 @@ export default function App() {
       {
         company: "HTC Global Services",
         location: "Chennai, Tamil Nadu",
-        role: "Software Development Engineer (SDE) - Full Stack",
+        role: "Engineer",
         period: "Feb 2022 -- Present",
         highlights: [
           "Accelerated legacy monolith modernization by engineering Spring Boot microservices to replace legacy WebSphere (WAS) workflows, deploying containerized services on Red Hat OpenShift (ROSA) to enhance system scalability.",
