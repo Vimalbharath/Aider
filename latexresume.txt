@@ -71,16 +71,17 @@
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
 %-----------HEADER-----------
 \begin{center}
     \textbf{\Huge \scshape VIMALBHARATH KUMAR} \\ \vspace{2pt}
-    \small \textbf{Software Development Engineer | Java, Spring Boot \& React} \\ \vspace{2pt}
+    \small \textbf{Full-Stack \& AI/ML Engineer | PyTorch, Java, Spring Boot, React \& Python} \\ \vspace{2pt}
     \small +91 80727 32691 $|$ \href{mailto:vimalbharath21@gmail.com}{\underline{vimalbharath21@gmail.com}} \\ \vspace{1pt}
-    \href{https://vimalbharath.netlify.app/}{\underline{Portfolio}} $|$
+    \href{https://aider-portfolio.onrender.com/}{\underline{Portfolio (AI)}} $|$
+    \href{https://vimalbharath.netlify.app/}{\underline{Portfolio (Main)}} $|$
     \href{https://www.linkedin.com/in/vimalbharath-kumar-007311201}{\underline{LinkedIn}} $|$
     \href{https://github.com/Vimalbharath}{\underline{GitHub}} $|$
     \href{https://leetcode.com/Vi21rath}{\underline{LeetCode}}
@@ -90,11 +91,13 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Java (Core Java, OOPs, Collections, Multithreading), JavaScript (ES6+), SQL, Python} \\
+     \textbf{AI \& Machine Learning}{: PyTorch, Transformers, LLM Training (nanoGPT), Autograd Engines (Micrograd), Tokenization (BPE/tiktoken), CUDA Acceleration, Gradient Accumulation, Mixed Precision (bf16/fp16), Model Optimization} \\
+     \textbf{Languages}{: Python, Java (Core Java, OOPs, Collections, Multithreading), JavaScript (ES6+), SQL} \\
      \textbf{Backend Development}{: Spring Boot, RESTful APIs, Microservices Architecture, Spring Data JPA, Hibernate, JWT Auth} \\
      \textbf{Frontend Development}{: React.js, Redux Toolkit, Axios, HTML5, CSS3, Bootstrap} \\
      \textbf{Cloud \& DevOps}{: Docker, Red Hat OpenShift (ROSA), Kubernetes, GitLab CI/CD, WebSphere (WAS), Splunk} \\
-     \textbf{Databases \& Tools}{: MySQL, PostgreSQL, Git, GitHub Copilot, Postman, JUnit, Mockito}
+     \textbf{AI Tools \& Developer Workflows}{: Aider AI, Gemini API, GitHub Copilot, Model Inference Scripting, PyTorch Checkpoint Management} \\
+     \textbf{Databases \& Tools}{: MySQL, PostgreSQL, Git, Postman, JUnit, Mockito}
     }}
  \end{itemize}
 
@@ -115,15 +118,35 @@
 
 %-----------PROJECTS-----------
 \section{Projects}
+
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Full-Stack Expense Tracker Platform} $|$ \emph{Spring Boot, React, MySQL, GitHub Copilot, REST API} $|$ \href{https://tracker-frontend-8mvf.onrender.com/}{\underline{View Live}
-          $|$ \href{https://github.com/Vimalbharath/project3}{\underline{Github code}}}}{}
+          {\textbf{Custom LLM Training \& Autograd Engine (Karpathy Curriculum)} $|$ \emph{PyTorch, Python, CUDA, BPE}$|$ \href{https://github.com/Vimalbharath/ML}{\underline{GitHub Code}}}{}
           \resumeItemListStart
-            \resumeItem{Architected a full-stack financial tracking application leveraging \textbf{GitHub Copilot} to accelerate backend service layer development and frontend component scaffolding.}
-            \resumeItem{Engineered a robust \textbf{Spring Boot} backend with \textbf{Spring Data JPA} and \textbf{MySQL} to persist transactional data, categorization models, and monthly budget limits.}
-            \resumeItem{Built an interactive dashboard in \textbf{React.js} featuring a dynamic monthly calendar view to visualize daily expenditure trends, category breakdowns, and financial analytics.}
-            \resumeItem{Optimized RESTful API endpoint execution times and handled client-side asynchronous data flows using \textbf{Axios} and deployed on \textbf{Render} platform.}
+            \resumeItem{Implemented a custom \textbf{Autograd Engine} and scalar backpropagation system from first principles in Python, establishing mathematical intuition for deep learning gradient flows.}
+            \resumeItem{Trained and optimized a \textbf{nanoGPT / Transformer language model} from scratch using \textbf{PyTorch}, implementing Multi-Head Self-Attention, Positional Encodings, and Layer Normalization.}
+            \resumeItem{Configured custom PyTorch training loops featuring \textbf{Gradient Accumulation}, mixed-precision (\textbf{bfloat16}), learning rate warmup schedules, and AdamW optimization on CUDA hardware.}
+            \resumeItem{Engineered checkpoint state management (\textbf{.pt files}) and inference generation pipelines with Top-K sampling, dynamic context cropping, and \textbf{tiktoken} Byte-Pair Encoding (BPE).}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{AI-Powered Interactive Portfolio Website} $|$ \emph{React, Aider AI, Gemini API, Render} $|$ \href{https://aider-portfolio.onrender.com/}{\underline{View Live}} $|$ \href{https://github.com/Vimalbharath/Aider}{\underline{GitHub Code}}}{}
+          \resumeItemListStart
+            \resumeItem{Architected and deployed an interactive portfolio application utilizing \textbf{Aider AI} command-line workflows paired with LLM REST endpoints.}
+            \resumeItem{Leveraged AI-assisted pair programming paradigms to accelerate component refactoring, UI responsive layouts, and state management.}
+            \resumeItem{Configured continuous integration and continuous deployment (CI/CD) triggers on \textbf{Render} synced directly with GitHub repositories.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Full-Stack Expense Tracker Platform} $|$ \emph{Spring Boot, React, MySQL, REST API} $|$ \href{https://tracker-frontend-8mvf.onrender.com/}{\underline{View Live}} $|$ \href{https://github.com/Vimalbharath/project3}{\underline{GitHub Code}}}{}
+          \resumeItemListStart
+            \resumeItem{Engineered a full-stack financial tracking application leveraging \textbf{Spring Boot} backend services and dynamic \textbf{React.js} dashboards.}
+            \resumeItem{Integrated \textbf{Spring Data JPA} with \textbf{MySQL} to persist transactional data, category hierarchies, and monthly spending constraints.}
+            \resumeItem{Optimized asynchronous RESTful API requests via \textbf{Axios} and implemented dynamic calendar views to display daily expenditure trends.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -131,16 +154,15 @@
       \resumeProjectHeading
           {\textbf{Full-Stack Tournament Scoring Application} $|$ \emph{Spring Boot, React, MySQL, JWT, Redux}}{}
           \resumeItemListStart
-            \resumeItem{Engineered a scalable RESTful backend using \textbf{Spring Boot} and \textbf{Spring Data JPA} following 3-tier Layered Architecture (Controller-Service-Repository).}
-            \resumeItem{Secured backend endpoints with Spring Security and stateless \textbf{JWT} authentication, implementing Role-Based Access Control (RBAC) to manage user permissions.}
-            \resumeItem{Developed an interactive dashboard in \textbf{React} utilizing \textbf{Redux Toolkit} for global state management and \textbf{Axios} interceptors for real-time score rendering.}
-            \resumeItem{Designed optimized \textbf{MySQL} database schemas with indexed primary/foreign keys to accelerate leaderboard query execution.}
+            \resumeItem{Engineered a 3-tier RESTful architecture using \textbf{Spring Boot} and \textbf{Spring Data JPA} to process real-time tournament metrics.}
+            \resumeItem{Secured backend services using \textbf{Spring Security} and stateless \textbf{JWT} authentication with Role-Based Access Control (RBAC).}
+            \resumeItem{Built a dynamic React dashboard powered by \textbf{Redux Toolkit} for real-time global state management and leaderboard updates.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Performance Rating Platform} $|$ \emph{React, Bootstrap, Axios, REST API}}{}
+          {\textbf{Performance Rating Platform} $|$ \emph{React, Bootstrap, Axios, REST API} $|$ \href{https://reactclass-tnjt.onrender.com}{\underline{View Live}} $|$ \href{https://github.com/Vimalbharath/ReactClass/tree/rating/Testing/my-react-app/src/project}{\underline{GitHub Code}}}{}
           \resumeItemListStart
             \resumeItem{Built a responsive corporate appraisal portal in \textbf{React.js} enabling managers to evaluate employee performance metrics seamlessly.}
             \resumeItem{Configured client-side routing via \textbf{React-Router} and managed persistent user session states using Local Storage.}
@@ -149,11 +171,10 @@
 
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Personal Portfolio Website} $|$ \emph{React, JavaScript, GitLab CI/CD} $|$ \href{https://vimalbharath.netlify.app/}{\underline{View Live}}
-           $|$ \href{https://gitlab.com/vimalbharath21/portfolio}{\underline{Gitlab code}}}{}
+          {\textbf{Full-Stack Personal Portfolio Website} $|$ \emph{React, JavaScript, GitLab CI/CD} $|$ \href{https://vimalbharath.netlify.app/}{\underline{View Live}} $|$ \href{https://gitlab.com/vimalbharath21/portfolio}{\underline{GitLab Code}}}{}
           \resumeItemListStart
-            \resumeItem{Designed and deployed a responsive Single Page Application (SPA) showcasing full-stack projects and technical architecture.}
-            \resumeItem{Automated continuous deployment (CD) workflows using \textbf{GitLab CI/CD} pipelines for live hosting on \textbf{Netlify}.}
+            \resumeItem{Designed and deployed a responsive Single Page Application (SPA) showcasing full-stack projects and system architecture.}
+            \resumeItem{Automated continuous deployment (CD) workflows using \textbf{GitLab CI/CD} pipelines for live web delivery on \textbf{Netlify}.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
