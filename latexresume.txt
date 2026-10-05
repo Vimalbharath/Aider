@@ -78,7 +78,7 @@
 %-----------HEADER-----------
 \begin{center}
     \textbf{\Huge \scshape VIMALBHARATH KUMAR} \\ \vspace{2pt}
-    \small \textbf{Full-Stack \& AI/ML Engineer | PyTorch, Java, Spring Boot, React \& Python} \\ \vspace{2pt}
+    \small \textbf{Full-Stack \& AI/ML Engineer | Java, Spring Boot, React, PyTorch \& System Design} \\ \vspace{2pt}
     \small +91 80727 32691 $|$ \href{mailto:vimalbharath21@gmail.com}{\underline{vimalbharath21@gmail.com}} \\ \vspace{1pt}
     \href{https://aider-portfolio.onrender.com/}{\underline{Portfolio (AI)}} $|$
     \href{https://vimalbharath.netlify.app/}{\underline{Portfolio (Main)}} $|$
@@ -91,9 +91,9 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{AI \& Machine Learning}{: PyTorch, Transformers, LLM Training (nanoGPT), Autograd Engines (Micrograd), Tokenization (BPE/tiktoken), CUDA Acceleration, Gradient Accumulation, Mixed Precision (bf16/fp16), Model Optimization} \\
-     \textbf{Languages}{: Python, Java (Core Java, OOPs, Collections, Multithreading), JavaScript (ES6+), SQL} \\
-     \textbf{Backend Development}{: Spring Boot, RESTful APIs, Microservices Architecture, Spring Data JPA, Hibernate, JWT Auth} \\
+     \textbf{AI \& Machine Learning}{: PyTorch, Transformers, LLM Training (GPT-2), Autograd Engines (Micrograd), Tokenization (BPE/tiktoken), CUDA Acceleration, Model Optimization, Google Colab GPU Workflows} \\
+     \textbf{Languages \& Core CS}{: Java (Core Java, OOPs, Collections, Multithreading), Python, JavaScript (ES6+), SQL, Data Structures \& Algorithms (LeetCode)} \\
+     \textbf{Backend \& System Design}{: Spring Boot, RESTful APIs, Microservices Architecture, Spring Data JPA, Hibernate, JWT Auth, High-Level \& Low-Level System Design} \\
      \textbf{Frontend Development}{: React.js, Redux Toolkit, Axios, HTML5, CSS3, Bootstrap} \\
      \textbf{Cloud \& DevOps}{: Docker, Red Hat OpenShift (ROSA), Kubernetes, GitLab CI/CD, WebSphere (WAS), Splunk} \\
      \textbf{AI Tools \& Developer Workflows}{: Aider AI, Gemini API, GitHub Copilot, Model Inference Scripting, PyTorch Checkpoint Management} \\
@@ -121,12 +121,12 @@
 
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Custom LLM Training \& Autograd Engine (Karpathy Curriculum)} $|$ \emph{PyTorch, Python, CUDA, BPE}$|$ \href{https://github.com/Vimalbharath/ML}{\underline{GitHub Code}}}{}
+          {\textbf{Custom LLM Training \& Autograd Engine (Karpathy Curriculum)} $|$ \emph{PyTorch, Python, CUDA, BPE, Google Colab} $|$ \href{https://github.com/Vimalbharath/ML}{\underline{GitHub Code}}}{}
           \resumeItemListStart
             \resumeItem{Implemented a custom \textbf{Autograd Engine} and scalar backpropagation system from first principles in Python, establishing mathematical intuition for deep learning gradient flows.}
-            \resumeItem{Trained and optimized a \textbf{nanoGPT / Transformer language model} from scratch using \textbf{PyTorch}, implementing Multi-Head Self-Attention, Positional Encodings, and Layer Normalization.}
-            \resumeItem{Configured custom PyTorch training loops featuring \textbf{Gradient Accumulation}, mixed-precision (\textbf{bfloat16}), learning rate warmup schedules, and AdamW optimization on CUDA hardware.}
-            \resumeItem{Engineered checkpoint state management (\textbf{.pt files}) and inference generation pipelines with Top-K sampling, dynamic context cropping, and \textbf{tiktoken} Byte-Pair Encoding (BPE).}
+            \resumeItem{Trained and optimized a \textbf{GPT-2 / Transformer language model} from scratch using \textbf{PyTorch}, implementing Multi-Head Self-Attention, Positional Encodings, and Layer Normalization.}
+            \resumeItem{Configured custom PyTorch training loops on Google Colab using GPU acceleration to train on \textbf{5 shards of the FineWeb-Edu dataset} for \textbf{50 steps}.}
+            \resumeItem{Engineered checkpoint state management (\textbf{.pt files}) and inference generation pipelines with Top-K sampling, dynamic context cropping, and \textbf{tiktoken} Byte-Pair Encoding (BPE) to sample generated text.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 

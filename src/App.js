@@ -26,7 +26,7 @@ export default function App() {
 
   const portfolioData = {
     name: "VIMALBHARATH KUMAR",
-    title: "Software Development Engineer | Java, Spring Boot & React",
+    title: "Full-Stack & AI/ML Engineer | Java, Spring Boot, React & PyTorch",
     profileImage: "/Vimal.jpeg",
     phone: "+91 80727 32691",
     email: "vimalbharath21@gmail.com",
@@ -38,11 +38,12 @@ export default function App() {
       leetcode: "https://leetcode.com/Vi21rath"
     },
     skills: [
-      { category: "Languages", items: "Java (Core Java, OOPs, Collections, Multithreading), JavaScript (ES6+), SQL, Python" },
-      { category: "Backend Development", items: "Spring Boot, RESTful APIs, Microservices Architecture, Spring Data JPA, Hibernate, JWT Auth" },
+      { category: "AI & Machine Learning", items: "PyTorch, Transformers, LLM Training (GPT-2), Autograd Engines (Micrograd), Tokenization (BPE/tiktoken), CUDA Acceleration, Model Optimization" },
+      { category: "Languages", items: "Java (Core Java, OOPs, Collections, Multithreading), Python, JavaScript (ES6+), SQL" },
+      { category: "Backend Development", items: "Spring Boot, RESTful APIs, Microservices Architecture, Spring Data JPA, Hibernate, JWT Auth, System Design" },
       { category: "Frontend Development", items: "React.js, Redux Toolkit, Axios, HTML5, CSS3, Bootstrap" },
       { category: "Cloud & DevOps", items: "Docker, Red Hat OpenShift (ROSA), Kubernetes, GitLab CI/CD, WebSphere (WAS), Splunk" },
-      { category: "AI Tools & Workflows", items: "Aider AI, Gemini 3.6 Flash API, GitHub Copilot" },
+      { category: "AI Tools & Workflows", items: "Aider AI, Gemini 3.6 Flash API, GitHub Copilot, Model Inference Scripting" },
       { category: "Databases & Tools", items: "MySQL, PostgreSQL, Git, Postman, JUnit, Mockito" }
     ],
     experience: [
@@ -61,6 +62,17 @@ export default function App() {
       }
     ],
     projects: [
+      {
+        title: "Custom LLM Training & Autograd Engine (Karpathy Curriculum)",
+        tech: "PyTorch, Python, CUDA, BPE, Google Colab",
+        github: "https://github.com/Vimalbharath/ML",
+        details: [
+          "Implemented a custom Autograd Engine and scalar backpropagation system from first principles in Python, establishing mathematical intuition for deep learning gradient flows.",
+          "Trained and optimized a GPT-2 / Transformer language model from scratch using PyTorch, implementing Multi-Head Self-Attention, Positional Encodings, and Layer Normalization.",
+          "Configured custom PyTorch training loops on Google Colab using GPU acceleration to train on 5 shards of the FineWeb-Edu dataset for 50 steps.",
+          "Engineered checkpoint state management (.pt files) and inference generation pipelines with Top-K sampling, dynamic context cropping, and tiktoken Byte-Pair Encoding (BPE)."
+        ]
+      },
       {
         title: "AI-Powered Personal Portfolio Website",
         tech: "React, Aider AI, Gemini 3.6 Flash API (Free Tier), Render",
